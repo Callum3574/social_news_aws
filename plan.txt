@@ -1,0 +1,7 @@
+1) index.js, there is a function that is posting to the endpoint of http://127.0.0.1:5000/stories/${id}/votes
+2) Need to access this POST request within flask. 
+3) if else, depending on what the post request is request.
+4) if up, score ++
+5) if down, score --
+
+
