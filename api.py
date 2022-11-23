@@ -4,6 +4,11 @@ import json
 from flask import Flask, current_app, jsonify
 from flask import request
 
+app = Flask(__name__)
+
+if __name__=='__main__':
+        app.run(debug=True,host='0.0.0.0', port = 5000)
+
 def get_db_connection():
   try:
     conn = psycopg2.connect("user=postgres password=input('Enter DB password') host=news-scraper-db-callum.c1i5dspnearp.eu-west-2.rds.amazonaws.com")
@@ -52,7 +57,6 @@ def query_cursor_vote(query, parameters=()):
     else:
       return "Error Connecting to Database", 500
 
-app = Flask(__name__)
 
 
 @app.route("/", methods=["GET"])
