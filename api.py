@@ -7,7 +7,7 @@ from flask import request
 
 def get_db_connection():
   try:
-    conn = psycopg2.connect("user=postgres password=Monapple100! host=news-scraper-db-callum.c1i5dspnearp.eu-west-2.rds.amazonaws.com")
+    conn = psycopg2.connect("user=postgres password=Sigmalabs123 host=database-4.ckpayodailen.eu-west-2.rds.amazonaws.com")
     return conn
   except:
     print("Error connecting to database.")
