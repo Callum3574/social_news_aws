@@ -15,6 +15,7 @@ def get_db_connection():
 conn = get_db_connection()
 
 
+
 def query_cursor_stories(query, parameters=()):
   #if there is a connection...
     if conn != None:
@@ -109,6 +110,14 @@ def votes(id):
   elif data['direction'] == 'down':
     query = "INSERT INTO votes (direction, created_at, updated_at, story_id) VALUES ('down', current_timestamp, current_timestamp, %s);"
     return query_cursor_vote(query, id)
+
+
+# @app.route("/search/tag", methods = ['GET'])
+# def search_stories():
+#   #make this request into a string. Into a list, then access the value and the first index will provide string of what is typed in
+#   data = list(request.json.values())[0]
+#   return data
+
 
 
 
