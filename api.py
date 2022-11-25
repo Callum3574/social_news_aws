@@ -15,6 +15,7 @@ def get_db_connection():
 conn = get_db_connection()
 
 
+
 def query_cursor_stories(query, parameters=()):
   #if there is a connection...
     if conn != None:
