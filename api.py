@@ -112,14 +112,6 @@ def votes(id):
     return query_cursor_vote(query, id)
 
 
-# @app.route("/search/tag", methods = ['GET'])
-# def search_stories():
-#   #make this request into a string. Into a list, then access the value and the first index will provide string of what is typed in
-#   data = list(request.json.values())[0]
-#   return data
-
-
-
 
 if __name__=='__main__':
         app.run(debug=True,host='0.0.0.0', port = 5000)
