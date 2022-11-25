@@ -7,19 +7,16 @@ window.onload = async function load() {
 
 async function onSearchClick() {
   const searchInputText = document.getElementById('search').value
-  const res = await fetch(
-    `http://3.8.82.60:5000/search?tags=${searchInputText}`,
-    {
-      method: 'GET'
-    }
-  )
+  const res = await fetch(`/search?tags=${searchInputText}`, {
+    method: 'GET'
+  })
   const data1 = await res.json()
   console.log(data1)
   displayStories(data1.stories)
 }
 
 async function getStories() {
-  const res = await fetch('http://3.8.82.60:5000/stories', {
+  const res = await fetch('/stories', {
     method: 'GET',
     credentials: 'include'
   })
@@ -32,7 +29,7 @@ async function handleVote(e) {
   const elemID = e.target.id.split('-')
   const id = elemID[0]
   const direction = elemID[1]
-  const rawRes = await fetch(`http://3.8.82.60:5000/stories/${id}/votes`, {
+  const rawRes = await fetch(`/stories/${id}/votes`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ direction }),

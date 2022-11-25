@@ -11,7 +11,7 @@ import psycopg2.extras
 
 def get_db_connection():
   try:
-    conn = psycopg2.connect("user=postgres password=input('Enter DB password') host=news-scraper-db-callum.c1i5dspnearp.eu-west-2.rds.amazonaws.com")
+    conn = psycopg2.connect("user=postgres password=Sigmalabs123 host=database-4.ckpayodailen.eu-west-2.rds.amazonaws.com")
     return conn
   except:
     print("Error connecting to database.")
