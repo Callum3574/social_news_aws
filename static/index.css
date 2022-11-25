@@ -7,12 +7,12 @@
 }
 
 body {
-  background: #ffbe76;
+  background: #d91cd3;
   font-family: "Inter", Arial, sans-serif;
 }
 
 main {
-  background: rgb(214, 39, 39);
+  background: rgb(0, 0, 0);
   padding: 1rem 3rem 2rem;
   width: 900px;
   margin: 2rem auto;
