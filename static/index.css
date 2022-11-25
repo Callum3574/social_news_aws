@@ -7,16 +7,17 @@
 }
 
 body {
-  background: #15c5a5;
+  background: #313433;
   font-family: "Inter", Arial, sans-serif;
 }
 
 main {
-  background: rgb(0, 0, 0);
+  background: rgb(192, 23, 222);
   padding: 1rem 3rem 2rem;
-  width: 900px;s
+  width: 900px;
   margin: 2rem auto;
   box-shadow: rgba(0, 0, 0, 0.05) -2px -2px 4px;
+  color: #fff;
 }
 
 header {
