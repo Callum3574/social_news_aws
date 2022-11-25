@@ -8,11 +8,11 @@
 
 body {
   background: #ffbe76;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 main {
-  background: #fff;
+  background: rgb(214, 39, 39);
   padding: 1rem 3rem 2rem;
   width: 900px;
   margin: 2rem auto;
