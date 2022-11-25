@@ -7,14 +7,14 @@
 }
 
 body {
-  background: #d91cd3;
+  background: #15c5a5;
   font-family: "Inter", Arial, sans-serif;
 }
 
 main {
   background: rgb(0, 0, 0);
   padding: 1rem 3rem 2rem;
-  width: 900px;
+  width: 900px;s
   margin: 2rem auto;
   box-shadow: rgba(0, 0, 0, 0.05) -2px -2px 4px;
 }

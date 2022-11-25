@@ -17,9 +17,6 @@ jobs:
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
 
-      - name: Python Linter
-        uses: sunnysid3up/python-linter@v0.1-beta.7
-
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
